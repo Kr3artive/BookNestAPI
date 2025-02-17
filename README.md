@@ -26,14 +26,10 @@ BookNestAPI is a RESTful API built with Node.js and Express.js to manage a colle
 ### Setup
 
 1. Clone the repository:
-
-```bash
 git clone https://github.com/Kr3artive/BookNestAPI.git
 
-Navigate into the project folder:
-bash
-Copy
-Edit
+
+###Navigate into the project folder:
 cd BookNestAPI
 Install dependencies:
 bash
