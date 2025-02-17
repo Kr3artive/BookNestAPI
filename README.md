@@ -35,21 +35,8 @@ BookNestAPI is a RESTful API built with Node.js and Express.js to manage a colle
 git clone https://github.com/Kr3artive/BookNestAPI.git
 
 API Endpoints
-
-1. GET /api/books
-Description: Get a list of all books.
-Response:
-Status: 200 OK
-Body: Array of books.
-
-2. GET /api/books/:id
-Description: Get details of a specific book by ID.
-Response:
-Status: 200 OK
-Body: Book details.
-
-3. POST /api/books
-Description: Add a new book.
+1. POST /addbook
+Description: Add a new book to the collection.
 Request Body:
 title: String
 author: String
@@ -59,7 +46,19 @@ Response:
 Status: 201 Created
 Body: Newly created book.
 
-4. PUT /api/books/:id
+2. GET /allbooks
+Description: Get a list of all books.
+Response:
+Status: 200 OK
+Body: Array of books.
+
+3. GET /book/:id
+Description: Get details of a specific book by ID.
+Response:
+Status: 200 OK
+Body: Book details.
+
+4. PUT /book/:id
 Description: Update a book's details by ID.
 Request Body:
 title: String
@@ -70,7 +69,7 @@ Response:
 Status: 200 OK
 Body: Updated book.
 
-5. DELETE /api/books/:id
+5. DELETE /deletebook/:id
 Description: Delete a book by ID.
 Response:
 Status: 200 OK
